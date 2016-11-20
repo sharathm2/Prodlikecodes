@@ -1,0 +1,64 @@
+using wServer.logic.behaviors;
+using wServer.logic.loot;
+using wServer.logic.transitions;
+
+#endregion
+
+namespace wServer.logic
+{
+    partial class BehaviorDb
+    {
+        private _ Manor = () => Behav()
+        //lord ruthven is waaay unfinished
+                    .Init("Lord Ruthven",
+                new State(
+                    new TransformOnDeath("Coffin", 1, 2, 0.35, true),
+                    new RealmPortalDrop(),
+                    new State("default",
+                        new PlayerWithinTransition(8, "spooksters")
+                        ),
+                    new State("spooksters",
+                        new Wander(0.2),
+                        //new Shoot(10, count: 5, shootAngle: 2, projectileIndex: 0, coolDown: 900),
+                        new Shoot(10, 18, 20, projectileIndex: 0, fixedAngle: 1, coolDown: 900),
+                        new TimedTransition(6000, "spooksters2")
+                        ),
+                    new State("spooksters2",
+                        new Wander(0.15),
+                        new Shoot(8.4, count: 40, projectileIndex: 1, coolDown: 2750),
+                        new Shoot(10, 18, 20, projectileIndex: 0, fixedAngle: 1, coolDown: 900),
+                        new Shoot(10, count: 5, shootAngle: 2, projectileIndex: 0, coolDown: 900),
+                        new TimedTransition(4000, "spooksters3")
+                        ),
+                    new State("spooksters3",
+                        new Heal(5, "Self", coolDown: 1250),
+                        new Shoot(8.4, count: 40, projectileIndex: 1, coolDown: 2750),
+                        new TimedTransition(4000, "spooksters")
+                        )
+                    ),
+                new MostDamagers(5,
+                    new ItemLoot("Potion of Attack", 1),
+                    new ItemLoot("Holy Water", 1),
+                    new ItemLoot("Death Tarot Card", awesomeloot),
+                    new ItemLoot("Wine Cellar Incantation", awesomeloot),
+                    new TierLoot(7, ItemType.Weapon, mediumloot),
+                    new TierLoot(8, ItemType.Weapon, mediumloot),
+                    new TierLoot(9, ItemType.Weapon, normalloot),
+                    new TierLoot(6, ItemType.Armor, poorloot),
+                    new TierLoot(6, ItemType.Armor, poorloot),
+                    new TierLoot(4, ItemType.Ability, normalloot),
+                    new TierLoot(5, ItemType.Ability, goodloot),
+                    new TierLoot(4, ItemType.Ring, normalloot),
+                    new ItemLoot("Holy Cross", awesomeloot),
+                    new ItemLoot("Golden Candelabra", awesomeloot)
+                    ),
+                new MostDamagers(3,
+                    new ItemLoot("Chasuble of Holy Light", awesomeloot),
+                    new ItemLoot("St. Abraham's Wand", awesomeloot),
+                    new OnlyOne(
+                        new ItemLoot("Tome of Purification", whitebag)
+                        ),
+                    new ItemLoot("Ring of Divine Faith", awesomeloot),
+                    new ItemLoot("Bone Dagger", awesomeloot)
+                    )
+            )
