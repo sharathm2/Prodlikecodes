@@ -11,7 +11,7 @@ namespace wServer.logic
     partial class BehaviorDb
     {
         private _ Manor = () => Behav()
-        //lord ruthven is waaay unfinished
+        //tiny bit undone
                     .Init("Lord Ruthven",
                 new State(
                     new RealmPortalDrop(),
