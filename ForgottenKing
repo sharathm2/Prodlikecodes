@@ -258,10 +258,10 @@
                         new State("MoveTo",
                             new ConditionalEffect(ConditionEffectIndex.Invincible),
                             new MoveTo(0, -8, 0.5),
-                            new TimedTransition(18000, "God")
+                            new TimedTransition(18000, "GodPhase")
                             ),
-                        new State("God",
-                            new Taunt("YOU TEST THE PATIENCE OF A GOD! TENTACLES OF WRATH..."),
+                        new State("GodPhase",
+                            new Taunt("YOU TEST THE PATIENCE OF A GOD! DIE DIE DIE..."),
                             new ConditionalEffect(ConditionEffectIndex.Invincible),
                             new Shoot(15, 1, projectileIndex: 1, fixedAngle: 85, coolDown: 500),
                             new Shoot(15, 1, projectileIndex: 1, fixedAngle: 95, coolDown: 500),
@@ -402,7 +402,7 @@
                             new TimedTransition(10800, "Hahaha")
                             ),
                         new State("Hahaha",
-                            new Taunt("Ha....Haaaa...haaaa"),
+                            new Taunt("Ha....Haa...Haa"),
                             new Shoot(10, 1, projectileIndex: 2, coolDown: 10),
                             new Shoot(10, 1, projectileIndex: 3, coolDown: 10),
                             //shtrs Lava Souls
