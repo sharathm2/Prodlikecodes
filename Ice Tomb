@@ -1,0 +1,1381 @@
+Sprites -> http://imgur.com/a/Hn2Ms
+
+Xml's below
+
+Make sure to fix the nile artifact locations on the XML
+
+This ice tomb behavior does not have the tower in the middle that must be broken. 
+
+Also Frimarra, enchanted ice shard and Ring of the northern light drops were not added. You have to do that youself.
+
+This is not 100% to prod. But works
+
+Please credit:
+Bork
+LoE Soft
+
+
+
+  <Object type="0x7fd0" id="Ice Golem">
+    <Group>Ice Golems</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>28</Index>
+    </AnimatedTexture>
+    <HitSound>monster/spiders_hit</HitSound>
+    <DeathSound>monster/spiders_death</DeathSound>
+    <Size>60</Size>
+    <MaxHitPoints>300</MaxHitPoints>
+    <Defense>0</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Blue Magic</ObjectId>
+      <Damage>50</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>200</LifetimeMS>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Violet Claw</ObjectId>
+      <Damage>20</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>200</LifetimeMS>
+      <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+      <Size>40</Size>
+    </Projectile>
+    <DisplayId>{iceTomb.Ice_Golem}</DisplayId>
+  </Object>
+
+  <Object type="0x7fab" id="Ice Artifact 1">
+    <DisplayId>{iceTomb.Ice_Artifact_1}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8dEncounters</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>2000</MaxHitPoints>
+    <Defense>20</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Blue Shuriken</ObjectId>
+      <Damage>90</Damage>
+      <Speed>80</Speed>
+      <Size>80</Size>
+      <LifetimeMS>2000</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Blue Shuriken</ObjectId>
+      <Damage>130</Damage>
+      <Speed>80</Speed>
+      <Size>120</Size>
+      <LifetimeMS>1000</LifetimeMS>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fac" id="Ice Artifact 2">
+    <DisplayId>{iceTomb.Ice_Artifact_2}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8dEncounters</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>2000</MaxHitPoints>
+    <Defense>20</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Blue Shuriken</ObjectId>
+      <Damage>90</Damage>
+      <Speed>80</Speed>
+      <Size>80</Size>
+      <LifetimeMS>2000</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Blue Shuriken</ObjectId>
+      <Damage>130</Damage>
+      <Speed>80</Speed>
+      <Size>120</Size>
+      <LifetimeMS>1000</LifetimeMS>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fad" id="Ice Artifact 3">
+    <DisplayId>{iceTomb.Ice_Artifact_3}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8dEncounters</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>2000</MaxHitPoints>
+    <Defense>20</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Blue Shuriken</ObjectId>
+      <Damage>90</Damage>
+      <Speed>100</Speed>
+      <Size>80</Size>
+      <LifetimeMS>2000</LifetimeMS>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Blue Shuriken</ObjectId>
+      <Damage>130</Damage>
+      <Speed>80</Speed>
+      <Size>120</Size>
+      <LifetimeMS>1000</LifetimeMS>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fae" id="Aqua Artifact 1">
+    <DisplayId>{iceTomb.Aqua_Artifact_1}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8dEncounters</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>2500</MaxHitPoints>
+    <Defense>20</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Black Missile</ObjectId>
+      <Damage>190</Damage>
+      <Speed>40</Speed>
+      <Size>120</Size>
+      <LifetimeMS>3000</LifetimeMS>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7faf" id="Aqua Artifact 2">
+    <DisplayId>{iceTomb.Aqua_Artifact_2}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8dEncounters</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>2500</MaxHitPoints>
+    <Defense>20</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Black Missile</ObjectId>
+      <Damage>190</Damage>
+      <Speed>40</Speed>
+      <Size>120</Size>
+      <LifetimeMS>3000</LifetimeMS>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fb0" id="Aqua Artifact 3">
+    <DisplayId>{iceTomb.Aqua_Artifact_3}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8dEncounters</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <Size>100</Size>
+    <MaxHitPoints>2500</MaxHitPoints>
+    <Defense>20</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Black Missile</ObjectId>
+      <Damage>190</Damage>
+      <Speed>40</Speed>
+      <Size>120</Size>
+      <LifetimeMS>3000</LifetimeMS>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fb1" id="Shard Artifact 1">
+    <DisplayId>{iceTomb.Shard_Artifact_1}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>29</Index>
+    </AnimatedTexture>
+    <Size>80</Size>
+    <MaxHitPoints>3000</MaxHitPoints>
+    <Defense>50</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Beam</ObjectId>
+      <Damage>50</Damage>
+      <Speed>200</Speed>
+      <Size>140</Size>
+      <LifetimeMS>200</LifetimeMS>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fb2" id="Shard Artifact 2">
+    <DisplayId>{iceTomb.Shard_Artifact_2}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>29</Index>
+    </AnimatedTexture>
+    <Size>80</Size>
+    <MaxHitPoints>3000</MaxHitPoints>
+    <Defense>50</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Beam</ObjectId>
+      <Damage>50</Damage>
+      <Speed>200</Speed>
+      <Size>140</Size>
+      <LifetimeMS>200</LifetimeMS>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+    </Projectile>
+  </Object>
+  <Object type="0x7fb3" id="Shard Artifact 3">
+    <DisplayId>{iceTomb.Shard_Artifact_3}</DisplayId>
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>29</Index>
+    </AnimatedTexture>
+    <Size>80</Size>
+    <MaxHitPoints>3000</MaxHitPoints>
+    <Defense>50</Defense>
+    <XpMult>0.0</XpMult>
+    <Projectile id="0">
+      <ObjectId>Beam</ObjectId>
+      <Damage>50</Damage>
+      <Speed>200</Speed>
+      <Size>140</Size>
+      <LifetimeMS>200</LifetimeMS>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fa6" id="Ice Tomb Boss Anchor">
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiChar216x16</File>
+      <Index>0x0e</Index>
+    </Texture>
+    <Size>0</Size>
+    <Defense>0</Defense>
+    <XpMult>0.0</XpMult>
+    <NoMiniMap/>
+    <DisplayId>{iceTomb.Ice_Tomb_Boss_Anchor}</DisplayId>
+  </Object>
+  <Object type="0x7fa7" id="Activator">
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x179</Index>
+    </Texture>
+    <Size>100</Size>
+    <MaxHitPoints>50000</MaxHitPoints>
+    <Defense>0</Defense>
+    <XpMult>0.0</XpMult>
+    <NoMiniMap/>
+    <DisplayId>{iceTomb.Activator}</DisplayId>
+    <Enemy/>
+    <StasisImmune/>
+    <AltTexture id="1">
+      <Texture>
+        <File>lofiObjBig</File>
+        <Index>0x17a</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="2">
+      <Texture>
+        <File>lofiObjBig</File>
+        <Index>0x17b</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="3">
+      <Texture>
+        <File>lofiObjBig</File>
+        <Index>0x17c</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="4">
+      <Texture>
+        <File>lofiObjBig</File>
+        <Index>0x17d</Index>
+      </Texture>
+    </AltTexture>
+    <AltTexture id="5">
+      <Texture>
+        <File>lofiObjBig</File>
+        <Index>0x17e</Index>
+      </Texture>
+    </AltTexture>
+    <HitSound>monster/eggs_hit</HitSound>
+    <DeathSound>monster/eggs_death</DeathSound>
+    <MaxHitPoints>100000</MaxHitPoints>
+    <Defense>0</Defense>
+    <XpMult>0.0</XpMult>
+    <Size>130</Size>
+    <ShadowSize>100</ShadowSize>
+  </Object>
+  <Object type="0x7fa8" id="Ice Tomb Support Statue">
+    <Group>Ice Tomb Boss Statues</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <DisplayId>{iceTomb.Ice_Tomb_Support_Statue}</DisplayId>
+    <Size>140</Size>
+    <MaxHitPoints>100000</MaxHitPoints>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x180</Index>
+    </Texture>
+  </Object>
+
+  <Object type="0x7fa9" id="Ice Tomb Attacker Statue">
+    <Group>Ice Tomb Boss Statues</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <DisplayId>{iceTomb.Ice_Tomb_Attacker_Statue}</DisplayId>
+    <Size>140</Size>
+    <MaxHitPoints>100000</MaxHitPoints>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x181</Index>
+    </Texture>
+  </Object>
+  <Object type="0x7faa" id="Ice Tomb Defender Statue">
+    <Group>Ice Tomb Boss Statues</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <DisplayId>{iceTomb.Ice_Tomb_Defender_Statue}</DisplayId>
+    <Size>140</Size>
+    <MaxHitPoints>100000</MaxHitPoints>
+    <Texture>
+      <File>lofiObjBig</File>
+      <Index>0x182</Index>
+    </Texture>
+  </Object>
+
+  <Object type="0x7fb4" id="Ice Tomb Support">
+    <Group>Ice Tomb Bosses</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <DisplayId>{iceTomb.Ice_Tomb_Support}</DisplayId>
+    <Quest/>
+    <Level>1</Level>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>24</Index>
+    </AnimatedTexture>
+    <HitSound>monster/medusa_hit</HitSound>
+    <DeathSound>monster/medusa_death</DeathSound>
+    <MaxHitPoints>80000</MaxHitPoints>
+    <Size>140</Size>
+    <Defense>15</Defense>
+    <XpMult>1</XpMult>
+    <God/>
+    <NoArticle/>
+    <Projectile id="0">
+      <ObjectId>Blue Bolt Shot</ObjectId>
+      <Damage>180</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>120</Size>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Grey Boomerang</ObjectId>
+      <Damage>40</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="1">Quiet</ConditionEffect>
+      <Boomerang/>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Blue Boomerang</ObjectId>
+      <Damage>40</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="5">Weak</ConditionEffect>
+      <Boomerang/>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="3">
+      <ObjectId>Ninja Star Ice</ObjectId>
+      <Damage>40</Damage>
+      <Speed>20</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Boomerang/>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="4">
+      <ObjectId>Purple Boomerang</ObjectId>
+      <Damage>40</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="5">Blind</ConditionEffect>
+      <Boomerang/>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="5">
+      <ObjectId>Frozen Arrow</ObjectId>
+      <Damage>40</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      <Size>100</Size>
+    </Projectile>
+    <Projectile id="6">
+      <ObjectId>Jester Bolt</ObjectId>
+      <Damage>200</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="1.4">Paralyzed</ConditionEffect>
+      <MultiHit/>
+      <Size>200</Size>
+    </Projectile>
+    <Projectile id="7">
+      <ObjectId>snow flakes</ObjectId>
+      <Damage>0</Damage>
+      <Speed>120</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="10">Weak</ConditionEffect>
+      <MultiHit/>
+      <Size>150</Size>
+    </Projectile>
+    <Projectile id="8">
+      <ObjectId>Ice Magic</ObjectId>
+      <Damage>50</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <ConditionEffect duration="1.0">Paralyzed</ConditionEffect>
+      <Size>120</Size>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fb5" id="Ice Tomb Attacker">
+    <Group>Ice Tomb Bosses</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <DisplayId>{iceTomb.Ice_Tomb_Attacker}</DisplayId>
+    <Quest/>
+    <Level>1</Level>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>25</Index>
+    </AnimatedTexture>
+    <HitSound>monster/medusa_hit</HitSound>
+    <DeathSound>monster/medusa_death</DeathSound>
+    <MaxHitPoints>90000</MaxHitPoints>
+    <Size>140</Size>
+    <Defense>30</Defense>
+    <XpMult>1</XpMult>
+    <God/>
+    <NoArticle/>
+    <Projectile id="0">
+      <ObjectId>Blue Bolt Shot</ObjectId>
+      <Damage>280</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>140</Size>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Ninja Star Ice</ObjectId>
+      <Damage>100</Damage>
+      <Speed>40</Speed>
+      <LifetimeMS>3600</LifetimeMS>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Boomerang/>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Icey Magic Attack</ObjectId>
+      <Damage>30</Damage>
+      <Speed>100</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <ArmorPiercing/>
+      <Size>100</Size>
+    </Projectile>
+    <Projectile id="3">
+      <ObjectId>snow flakes</ObjectId>
+      <Damage>0</Damage>
+      <Speed>120</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="10">Weak</ConditionEffect>
+      <MultiHit/>
+      <Size>200</Size>
+    </Projectile>
+    <Projectile id="4">
+      <ObjectId>Frozen Wand Icicle</ObjectId>
+      <Damage>80</Damage>
+      <Speed>60</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>140</Size>
+      <Parametric/>
+    </Projectile>
+    <Projectile id="5">
+      <ObjectId>Blue Bolt Shot</ObjectId>
+      <Damage>200</Damage>
+      <Speed>50</Speed>
+      <LifetimeMS>4000</LifetimeMS>
+      <Size>140</Size>
+      <MultiHit/>
+    </Projectile>
+  </Object>
+
+  <Object type="0x7fb6" id="Ice Tomb Defender">
+    <Group>Ice Tomb Bosses</Group>
+    <Enemy/>
+    <Class>Character</Class>
+    <DisplayId>{iceTomb.Ice_Tomb_Defender}</DisplayId>
+    <Quest/>
+    <Level>1</Level>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>26</Index>
+    </AnimatedTexture>
+    <HitSound>monster/medusa_hit</HitSound>
+    <DeathSound>monster/medusa_death</DeathSound>
+    <MaxHitPoints>100000</MaxHitPoints>
+    <Size>140</Size>
+    <Defense>50</Defense>
+    <XpMult>1</XpMult>
+    <God/>
+    <NoArticle/>
+    <Projectile id="0">
+      <ObjectId>Blue Bolt Shot</ObjectId>
+      <Damage>240</Damage>
+      <Speed>60</Speed>
+      <LifetimeMS>2000</LifetimeMS>
+      <Size>180</Size>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="1">
+      <ObjectId>Water Storm</ObjectId>
+      <Damage>150</Damage>
+      <Speed>60</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="5">Armor Broken</ConditionEffect>
+      <Boomerang/>
+      <MultiHit/>
+    </Projectile>
+    <Projectile id="2">
+      <ObjectId>Silver Shield</ObjectId>
+      <Damage>160</Damage>
+      <Speed>70</Speed>
+      <LifetimeMS>540</LifetimeMS>
+      <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+      <Size>200</Size>
+    </Projectile>
+    <Projectile id="3">
+      <ObjectId>snow flakes</ObjectId>
+      <Damage>0</Damage>
+      <Speed>120</Speed>
+      <LifetimeMS>5000</LifetimeMS>
+      <ConditionEffect duration="10">Weak</ConditionEffect>
+      <MultiHit/>
+      <Size>200</Size>
+    </Projectile>
+    <Projectile id="4">
+      <ObjectId>Silver Shield</ObjectId>
+      <Damage>60</Damage>
+      <Speed>80</Speed>
+      <LifetimeMS>1200</LifetimeMS>
+      <ConditionEffect duration="1.2">Stunned</ConditionEffect>
+      <Size>200</Size>
+    </Projectile>
+  </Object>
+  
+  
+  
+  Code ->
+  
+  #region
+
+using wServer.logic.behaviors;
+using wServer.logic.loot;
+using wServer.logic.transitions;
+#endregion
+
+namespace wServer.logic
+{
+    partial class BehaviorDb
+    {
+        private _ IceTomb = () => Behav()
+            .Init("Ice Tomb Defender",
+                  new State(
+                    new State("idle",
+                        new Taunt("THIS WILL NOW BE YOUR TOMB!"),
+                        new ConditionalEffect(ConditionEffectIndex.Armored),
+                        new Orbit(.6, 5, target: "Ice Tomb Boss Anchor", radiusVariance: 0.5),
+                        new HpLessTransition(.99, "weakning")
+                        ),
+                    new State("weakning",
+                        new Orbit(.6, 5, target: "Ice Tomb Boss Anchor", radiusVariance: 0.5),
+                        new Taunt("Impudence! I am an immortal, I needn't take you seriously."),
+                        new Shoot(50, 24, projectileIndex: 3, coolDown: 6000, coolDownOffset: 2000),
+                        new HpLessTransition(.97, "active")
+                        ),
+                    new State("active",
+                        new Orbit(.7, 5, target: "Ice Tomb Boss Anchor", radiusVariance: 0.5),
+                        new Shoot(50, 8, projectileIndex: 2, coolDown: 1000, coolDownOffset: 500),
+                        new Shoot(50, 4, projectileIndex: 1, coolDown: 3000, coolDownOffset: 500),
+                        new Shoot(50, 6, projectileIndex: 0, coolDown: 3100, coolDownOffset: 500),
+                        new HpLessTransition(.9, "boomerang")
+                        ),
+                    new State("boomerang",
+                         new Taunt(0.75, "The others use tricks, but I shall stun you with my brute strength!"),
+                        new ConditionalEffect(ConditionEffectIndex.Armored),
+                        new Orbit(.6, 5, target: "Ice Tomb Boss Anchor", radiusVariance: 0.5),
+                        new Shoot(50, 8, projectileIndex: 2, coolDown: 1000, coolDownOffset: 500),
+                        new Shoot(50, 8, 10, 1, coolDown: 4750, coolDownOffset: 500),
+                        new Shoot(50, 1, 10, 0, coolDown: 4750, coolDownOffset: 500),
+                        new HpLessTransition(.66, "double shot")
+                        ),
+                    new State("double shot",
+                        new ConditionalEffect(ConditionEffectIndex.Armored),
+                        new Orbit(.7, 5, target: "Ice Tomb Boss Anchor", radiusVariance: 0.5),
+                        new Shoot(50, 8, projectileIndex: 2, coolDown: 1000, coolDownOffset: 500),
+                        new Shoot(50, 8, 10, 1, coolDown: 4750, coolDownOffset: 500),
+                        new Shoot(50, 2, 10, 0, coolDown: 4750, coolDownOffset: 500),
+                        new HpLessTransition(.5, "artifacts")
+                        ),
+                    new State("triple shot",
+                        new ConditionalEffect(ConditionEffectIndex.Armored),
+                        new Orbit(.6, 5, target: "Ice Tomb Boss Anchor", radiusVariance: 0.5),
+                        new Shoot(50, 8, projectileIndex: 2, coolDown: 1000, coolDownOffset: 500),
+                        new Shoot(50, 8, 10, 1, coolDown: 4750, coolDownOffset: 500),
+                        new Shoot(50, 3, 10, 0, coolDown: 4750, coolDownOffset: 500),
+                        new HpLessTransition(.1, "rage")
+                        ),
+                    new State("artifacts",
+                        new Taunt(0.65, "Awe at my wondrous defense"),
+                        new ConditionalEffect(ConditionEffectIndex.Armored),
+                        new Taunt("My artifacts shall prove my wall of defense is impenetrable!"),
+                        new Orbit(.6, 5, target: "Tomb Boss Anchor", radiusVariance: 0.5),
+                        new Shoot(50, 8, projectileIndex: 2, coolDown: 1000, coolDownOffset: 500),
+                        new Shoot(50, 8, 10, 1, coolDown: 4750, coolDownOffset: 500),
+                        new Shoot(50, 2, 10, 0, coolDown: 4750, coolDownOffset: 500),
+                        new Spawn("Shard Artifact 1", 3, 3, 2000),
+                        new Reproduce("Shard Artifact 1", 10, 3, 1500),
+                        new Spawn("Shard Artifact 2", 3, 0, 3500000),
+                        new Reproduce("Shard Artifact 2", 10, 3, 1500),
+                        new Spawn("Shard Artifact 3", 3, 0, 3500000),
+                        new Reproduce("Shard Artifact 3", 10, 3, 1500),
+                        new HpLessTransition(.33, "triple shot")
+                        ),
+                    new State("rage",
+                        new Taunt("The end of your path is here!"),
+                        new Follow(0.6, range: 1, duration: 5000, coolDown: 0),
+                        new Flash(0xfFF0000, 1, 9000001),
+                        new Shoot(50, 8, 10, 1, coolDown: 4750, coolDownOffset: 500),
+                        new Shoot(50, 4, 10, 4, coolDown: 300),
+                        new Shoot(50, 3, 10, 0, coolDown: 4750, coolDownOffset: 500)
+                        )
+                    ),
+                    new Threshold(0.32,
+                        new ItemLoot("Potion of Life", 1)
+                    ),
+                    new Threshold(0.1,
+                        new ItemLoot("Ring of the Pyramid", 0.005),
+                        new ItemLoot("Tome of Holy Protection", 0.005),
+                        new ItemLoot("Wine Cellar Incantation", 0.005)
+                    ),
+                    new Threshold(0.2,
+                        new EggLoot(EggRarity.Common, 0.1),
+                        new EggLoot(EggRarity.Uncommon, 0.05),
+                        new EggLoot(EggRarity.Rare, 0.01),
+                        new EggLoot(EggRarity.Legendary, 0.002)
+                    )
+            )
+                                  .Init("Ice Tomb Support",
+                                               new State(
+                                        new Taunt(0.99, "ENOUGHT OF YOUR VANDALISM!"),
+                                        new State("Idle",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new EntityNotExistsTransition("Ice Tomb Boss Anchor", 50, "IdlePhase1"),
+                                                new EntityExistsTransition("Ice Tomb Boss Anchor", 50, "IdlePhase2")
+                                        ),
+                                        new State("IdlePhase1",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new HpLessTransition(0.99, "Phase1")
+                                        ),
+                                        new State("IdlePhase2",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new HpLessTransition(0.98, "2Phase1")
+                                        ),
+                                        //                                      If Anchor Don't Exist  
+                                        new State("Phase1",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Prioritize(
+                                                        new Wander(0.3)
+                                                ),            
+                                                new HpLessTransition(0.97, "Phase2")
+                                        ),
+                                        new State("Phase2",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Prioritize(
+                                                        new Wander(0.3)
+                                                ),
+                                                new Shoot(60, count: 15, fixedAngle: 360 / 15, projectileIndex: 7, coolDown: 10000),
+                                                new HpLessTransition(0.94, "Phase3")
+                                        ),
+
+                                        new State("Phase3",
+                                                new Prioritize(
+                                                        new Wander(0.3)
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 3000),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 1000),
+                                                new HpLessTransition(0.92, "Phase4")
+                                        ),
+                                        new State("Phase4",
+                                                new Prioritize(
+                                                        new Wander(0.3)
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 3000),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 1000),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2000),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new HpLessTransition(0.80, "Phase5")
+                                        ),
+                                        new State("Phase5",
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 3000),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 1000),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2700),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 2000),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 2500),
+                                                new HpLessTransition(0.60, "Phase6")
+                                        ),
+                                        new State("Phase6",
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2600),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2000),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 2400),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 1500),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 1800),
+                                                new Shoot(40, count: 2, fixedAngle: 140, shootAngle: 9, projectileIndex: 8, coolDown: 1000),
+                                                new HpLessTransition(0.50, "Phase7")
+                                        ),
+                                        new State("Phase7",
+                                                new Taunt(0.99, "My artifacts shall make your lethargic lives end much more swiftly!"),
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Spawn("Ice Artifact 1", 3, initialSpawn: 1),
+                                                new Spawn("Ice Artifact 2", 3, initialSpawn: 1),
+                                                new Spawn("Ice Artifact 3", 3, initialSpawn: 1),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2600),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2000),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 2400),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 1500),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 1800),
+                                                new HpLessTransition(0.30, "Phase8")
+                                        ),
+                                        new State("Phase8",
+                                                new Prioritize(
+                                                        new Wander(0.6)
+                                                ),
+                                                new Spawn("Ice Artifact 1", 3, coolDown: 20000),
+                                                new Spawn("Ice Artifact 2", 3, coolDown: 20000),
+                                                new Spawn("Ice Artifact 3", 3, coolDown: 20000),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2300),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 1700),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 2000),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 1300),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 1500),
+                                                new HpLessTransition(0.10, "Rage")
+                                        ),
+                                        new State("Rage",
+                                                new Taunt(0.99, "This cannot be! You shall not succeed!"),
+                                                new Flash(0xFF0000, .1, 1000),
+                                                new Prioritize(
+                                                        new Follow(1, 10, 3)
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2600),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2000),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 2400),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 1500),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 1800),
+                                                new Shoot(40, count: 7, fixedAngle: 160, shootAngle: 12, projectileIndex: 8, coolDown: 1500)
+                                        ),
+                                        new State("2Phase1",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new HpLessTransition(0.97, "2Phase2")
+                                        ),
+                                        new State("2Phase2",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(60, count: 15, fixedAngle: 360 / 15, projectileIndex: 7, coolDown: 10000),
+                                                new HpLessTransition(0.94, "2Phase3")
+                                        ),
+
+                                        new State("2Phase3",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 3000),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 1000),
+                                                new HpLessTransition(0.92, "2Phase4")
+                                        ),
+                                        new State("2Phase4",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 3000),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 1000),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2000),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new HpLessTransition(0.80, "2Phase5")
+                                        ),
+                                        new State("2Phase5",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 3000),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 1000),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2700),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 2000),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 2500),
+                                                new HpLessTransition(0.60, "2Phase6")
+                                        ),
+                                        new State("2Phase6",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 5, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2600),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2700),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 2000),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 2500),
+                                                new Shoot(40, count: 4, fixedAngle: 140, shootAngle: 9, projectileIndex: 8, coolDown: 1000),
+                                                new HpLessTransition(0.50, "2Phase7")
+                                        ),
+                                        new State("2Phase7",
+                                                new Taunt(0.99, "My artifacts shall make your lethargic lives end much more swiftly!"),
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Ice Artifact 1", 3, initialSpawn: 1),
+                                                new Spawn("Ice Artifact 2", 3, initialSpawn: 1),
+                                                new Spawn("Ice Artifact 3", 3, initialSpawn: 1),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2600),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2700),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 2000),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 2500),
+                                                new HpLessTransition(0.30, "2Phase8")
+                                        ),
+                                        new State("2Phase8",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Ice Artifact 1", 3, coolDown: 20000),
+                                                new Spawn("Ice Artifact 2", 3, coolDown: 20000),
+                                                new Spawn("Ice Artifact 3", 3, coolDown: 20000),
+                                                new Shoot(16, count: 1, projectileIndex: 6, coolDown: 2300),
+                                                new Shoot(32, count: 1, projectileIndex: 5, coolDown: 800),
+                                                new Shoot(16, count: 3, shootAngle: 360 / 3, projectileIndex: 1, coolDown: 2700),
+                                                new Shoot(16, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 3000),
+                                                new Shoot(16, count: 6, shootAngle: 360 / 6, projectileIndex: 4, coolDown: 2000),
+                                                new Shoot(16, count: 5, shootAngle: 360 / 5, projectileIndex: 3, coolDown: 2500),
+                                                new HpLessTransition(0.10, "Rage")
+                                        )
+                                ),
+                    new Threshold(0.32,
+                        new ItemLoot("Potion of Life", 1)
+                    ),
+                    new Threshold(0.1,
+                        new ItemLoot("Ring of the Sphinx", 0.005),
+                        new ItemLoot("Wine Cellar Incantation", 0.005)
+                    ),
+                    new Threshold(0.2,
+                        new EggLoot(EggRarity.Common, 0.1),
+                        new EggLoot(EggRarity.Uncommon, 0.05),
+                        new EggLoot(EggRarity.Rare, 0.01),
+                        new EggLoot(EggRarity.Legendary, 0.002)
+                    )
+            )
+
+                                   .Init("Ice Tomb Attacker",
+                                   new State(
+                                        new Taunt(0.99, "YOU HAVE AWAKENED US!"),
+                                        new State("Idle",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new EntityNotExistsTransition("Ice Tomb Boss Anchor", 50, "IdlePhase1"),
+                                                new EntityExistsTransition("Ice Tomb Boss Anchor", 50, "IdlePhase2")
+                                        ),
+                                        new State("IdlePhase1",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new HpLessTransition(0.99, "1Phase")
+                                        ),
+                                        new State("IdlePhase2",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new HpLessTransition(0.98, "1Phase2")
+                                        ),
+                                        //                                      If Anchor Don't Exist  
+                                        new State("1Phase",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Taunt(0.99, "Nut, protect me at once!"),
+                                                new Prioritize(
+                                                        new Wander(0.3)
+                                                ),
+                                                new Shoot(60, count: 15, fixedAngle: 360 / 15, projectileIndex: 3, coolDown: 10000),
+                                                new HpLessTransition(0.97, "2Phase")
+                                        ),
+                                        new State("2Phase",
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 3000),
+                                                new HpLessTransition(.9, "3Phase")
+                                        ),
+                                        new State("3Phase",
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Spawn("Ice Golem", 3),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3500),
+                                                new Shoot(20, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 1500),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 2300),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2500),
+                                                new HpLessTransition(.8, "4Phase")
+                                                ),
+                                        new State("4Phase",
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Spawn("Ice Golem", 3),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3500),
+                                                new Shoot(20, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 1500),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 2300),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2500),
+                                                new HpLessTransition(.7, "5Phase")
+                                        ),
+                                        new State("5Phase",
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Spawn("Ice Golem", 3),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3500),
+                                                new Shoot(20, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 1500),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 2300),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2500),
+                                                new HpLessTransition(.5, "6Phase")
+                                        ),
+                                        new State("6Phase",
+                                                new Taunt(0.99, "My artifacts shall destroy from your soul to your flesh"),
+                                                new Prioritize(
+                                                        new Wander(0.4)
+                                                ),
+                                                new Spawn("Aqua Artifact 1", 3, initialSpawn: 1),
+                                                new Spawn("Aqua Artifact 2", 3, initialSpawn: 1),
+                                                new Spawn("Aqua Artifact 3", 3, initialSpawn: 1),
+                                                new Shoot(20, count: 5, shootAngle: 360 / 5, projectileIndex: 2, coolDown: 2000),
+                                                new Shoot(20, count: 4, shootAngle: 40, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(20, count: 3, shootAngle: 10, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 5000),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 1500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2000),
+                                                new Reproduce("Ice Golem", 3, 3, coolDown: 10000),
+                                                new HpLessTransition(0.30, "7Phase")
+                                        ),
+                                        new State("7Phase",
+                                                new Prioritize(
+                                                        new Wander(0.6)
+                                                ),
+                                                new Spawn("Aqua Artifact 1", 3, coolDown: 20000),
+                                                new Spawn("Aqua Artifact 2", 3, coolDown: 20000),
+                                                new Spawn("Aqua Artifact 3", 3, coolDown: 20000),
+                                                new Shoot(20, count: 5, shootAngle: 360 / 5, projectileIndex: 2, coolDown: 2000),
+                                                new Shoot(20, count: 4, shootAngle: 40, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(20, count: 3, shootAngle: 10, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 5000),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 1500, predictive: 0.5),
+                                                new Grenade(3, 50, 10, coolDown: 2000),
+                                                new Reproduce("Ice Golem", 3, 3, coolDown: 10000),
+                                                new HpLessTransition(0.10, "Rage")
+                                        ),
+                                        new State("Rage",
+                                                new Taunt(0.99, "Argh! You shall pay for your crimes!"),
+                                                new Flash(0xFF0000, 1, 1000),
+                                                new Prioritize(
+                                                        new StayBack(1, 7)
+                                                ),
+                                                new Spawn("Aqua Artifact 1", 3, coolDown: 20000),
+                                                new Spawn("Aqua Artifact 2", 3, coolDown: 20000),
+                                                new Spawn("Aqua Artifact 3", 3, coolDown: 20000),
+                                                new Reproduce("Ice Golem", 3, 3, coolDown: 5000),
+                                                new Grenade(4, 50, 7, coolDown: 2000),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3000),
+                                                new Shoot(20, count: 1, fixedAngle: 10, projectileIndex: 5),
+                                                new Shoot(20, count: 1, fixedAngle: 350, projectileIndex: 5),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5)
+                                        ),
+                                        //                                                                                              IfAnchorExist  
+                                        new State("1Phase2",
+                                                new ConditionalEffect(ConditionEffectIndex.Armored),
+                                                new Taunt(0.99, "Nut, protect me at once!"),
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(60, count: 15, fixedAngle: 360 / 15, projectileIndex: 3, coolDown: 10000),
+                                                new HpLessTransition(0.97, "2Phase2")
+                                        ),
+                                        new State("2Phase2",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 3000),
+                                                new HpLessTransition(.9, "3Phase2")
+                                        ),
+                                        new State("3Phase2",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Ice Golem", 3),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3500),
+                                                new Shoot(20, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 1500),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 2300),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2500),
+                                                new HpLessTransition(.8, "4Phase2")
+                                        ),
+                                        new State("4Phase2",
+                                                new Prioritize(
+                                                        new Orbit(0.4, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Ice Golem", 3),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3500),
+                                                new Shoot(20, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 1500),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 2300),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2500),
+                                                new HpLessTransition(.7, "5Phase2")
+                                        ),
+                                        new State("5Phase2",
+                                                new Prioritize(
+                                                        new Orbit(0.6, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Ice Golem", 3),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 3500),
+                                                new Shoot(20, count: 4, shootAngle: 360 / 4, projectileIndex: 2, coolDown: 1500),
+                                                new Shoot(20, count: 2, shootAngle: 12, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 2300),
+                                                new Shoot(20, count: 1, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2500),
+                                                new HpLessTransition(.5, "6Phase2")
+                                        ),
+                                        new State("6Phase2",
+                                                new Taunt(0.99, "My artifacts shall destroy from your soul to your flesh"),
+                                                new Prioritize(
+                                                        new Orbit(0.6, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Aqua Artifact 1", 3, initialSpawn: 1),
+                                                new Spawn("Aqua Artifact 2", 3, initialSpawn: 1),
+                                                new Spawn("Aqua Artifact 3", 3, initialSpawn: 1),
+                                                new Shoot(20, count: 5, shootAngle: 360 / 5, projectileIndex: 2, coolDown: 2000),
+                                                new Shoot(20, count: 4, shootAngle: 40, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(20, count: 3, shootAngle: 10, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 5000),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 1500, predictive: 0.5),
+                                                new Grenade(3, 50, 7, coolDown: 2000),
+                                                new Reproduce("Ice Golem", 3, 3, coolDown: 10000),
+                                                new HpLessTransition(0.30, "7Phase2")
+                                        ),
+                                        new State("7Phase2",
+                                                new Prioritize(
+                                                        new Orbit(0.6, 3, 20, "Ice Tomb Boss Anchor")
+                                                ),
+                                                new Spawn("Aqua Artifact 1", 3, coolDown: 20000),
+                                                new Spawn("Aqua Artifact 2", 3, coolDown: 20000),
+                                                new Spawn("Aqua Artifact 3", 3, coolDown: 20000),
+                                                new Shoot(20, count: 5, shootAngle: 360 / 5, projectileIndex: 2, coolDown: 2000),
+                                                new Shoot(20, count: 4, shootAngle: 40, projectileIndex: 5, coolDown: 1500),
+                                                new Shoot(20, count: 3, shootAngle: 10, projectileIndex: 2, coolDown: 500, predictive: 0.5),
+                                                new Shoot(14.4, count: 8, fixedAngle: 360 / 8, projectileIndex: 1, coolDown: 5000),
+                                                new Shoot(16, count: 1, projectileIndex: 0, coolDown: 1500, predictive: 0.5),
+                                                new Grenade(3, 50, 10, coolDown: 2000),
+                                                new Reproduce("Ice Golem", 3, 3, coolDown: 10000),
+                                                new HpLessTransition(0.10, "Rage")
+                                        )
+                                ),
+                new Threshold(0.32,
+                        new ItemLoot("Potion of Life", 1)
+                ),
+                new Threshold(0.1,
+                    new ItemLoot("Ring of the Nile", 0.002),
+                    new ItemLoot("Wine Cellar Incantation", 0.002)
+                ),
+                new Threshold(0.2,
+                    new EggLoot(EggRarity.Common, 0.1),
+                    new EggLoot(EggRarity.Uncommon, 0.05),
+                    new EggLoot(EggRarity.Rare, 0.01),
+                    new EggLoot(EggRarity.Legendary, 0.002)
+                )
+            )
+
+            //Minions
+            .Init("Shard Artifact 1",
+                new State(
+                    new Prioritize(
+                        new Orbit(1, 2, target: "Ice Tomb Defender", radiusVariance: 0.5),
+                        new Follow(0.85, range: 1, duration: 5000, coolDown: 0)
+                        ),
+                    new Shoot(3, coolDown: 2500)
+                    ))
+            .Init("Shard Artifact 2",
+                new State(
+                    new Prioritize(
+                        new Orbit(1, 2, target: "Ice Tomb Attacker", radiusVariance: 0.5),
+                        new Follow(0.85, range: 1, duration: 5000, coolDown: 0)
+                        ),
+                    new Shoot(3, coolDown: 2500)
+                    ))
+            .Init("Shard Artifact 3",
+                new State(
+                    new Prioritize(
+                        new Orbit(1, 2, target: "Ice Tomb Support", radiusVariance: 0.5),
+                        new Follow(0.85, range: 1, duration: 5000, coolDown: 0)
+                        ),
+                    new Shoot(3, coolDown: 2500)
+                    ))
+        //
+         .Init("Ice Artifact 1",
+            new State(
+            new Prioritize(
+           new Orbit(1, 3, 30, "Ice Tomb Support")
+                ),
+           new Shoot(16, count: 1, shootAngle: 12, coolDown: 1500)
+                )
+              )
+        .Init("Ice Artifact 2",
+         new State(
+          new State("Normal",
+           new Prioritize(
+             new Orbit(1, 3, 30, "Ice Tomb Defender")
+             ),
+             new Shoot(16, count: 1, shootAngle: 12, coolDown: 1500),
+            new EntityNotExistsTransition("Ice Tomb Defender", 50, "Attacker Exist?")
+             ),
+             new State("Attacker Exist?",
+             new Prioritize(
+             new Orbit(1, 3, 30, "Ice Tomb Attacker")
+              ),
+              new Shoot(4, count: 1, shootAngle: 12, coolDown: 1000),
+               new EntityNotExistsTransition("Ice Tomb Attacker", 50, "Suicide")
+             ),
+                 new State("Suicide",
+                 new Suicide()
+                        )
+                    ) 
+                   )
+                .Init("Ice Artifact 3",
+                     new State(
+                    new State("Normal",
+                       new Prioritize(
+                        new Orbit(1, 3, 30, "Ice Tomb Attacker")
+                         ),
+                        new Shoot(16, count: 1, shootAngle: 12, coolDown: 1500),
+                        new EntityNotExistsTransition("Ice Tomb Attacker", 50, "Defender Exist?")
+                        ),
+                       new State("Defender Exist?",
+                        new Prioritize(
+                         new Orbit(1, 3, 30, "Ice Tomb Defender")
+                              ),
+                   new Shoot(4, count: 1, shootAngle: 12, coolDown: 1000),
+                         new EntityNotExistsTransition("Ice Tomb Defender", 50, "Suicide")
+                        ),
+                       new State("Suicide",
+                       new Suicide()
+                      )
+                  )
+                 )
+        //
+        .Init("Aqua Artifact 1",
+        new State(
+         new Prioritize(
+         new Orbit(1, 3, 30, "Ice Tomb Attacker")
+           ),
+            new Shoot(12, count: 1, shootAngle: 12, coolDown: 1500)
+           )
+            )
+               .Init("Aqua Artifact 2",
+               new State(
+                      new State("Normal",
+                   new Prioritize(
+                  new Orbit(1, 3, 30, "Ice Tomb Defender")
+                       ),
+                 new Shoot(12, count: 1, shootAngle: 12, coolDown: 1500),
+                  new EntityNotExistsTransition("Ice Tomb Defender", 50, "Support Exist?")
+                   ),
+               new State("Support Exist?",
+             new Prioritize(
+              new Orbit(1, 3, 30, "Ice Tomb Support")
+                  ),
+                new Shoot(12, count: 1, shootAngle: 12, coolDown: 1000),
+                new EntityNotExistsTransition("Ice Tomb Support", 50, "Suicide")
+                 ),
+            new State("Suicide",
+              new Suicide()
+                   )
+                )
+              )
+          .Init("Aqua Artifact 3",
+                  new State(
+                  new State("Normal",
+                    new Prioritize(
+                    new Orbit(1, 3, 30, "Ice Tomb Support")
+                     ),
+                   new Shoot(12, count: 1, shootAngle: 12, coolDown: 1500),
+                  new EntityNotExistsTransition("Ice Tomb Support", 50, "Defender Exist?")
+                   ),
+                new State("Defender Exist?",
+                  new Prioritize(
+              new Orbit(1, 3, 30, "Ice Tomb Defender")
+                 ),
+          new Shoot(12, count: 1, shootAngle: 12, coolDown: 1000),
+           new EntityNotExistsTransition("Ice Tomb Defender", 50, "Suicide")
+                    ),
+            new State("Suicide",
+           new Suicide()
+               )
+              )
+             )
+            .Init("Ice Tomb Defender Statue",
+                new State(
+                    new State(
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Inactive Sarcophagus", 1000, "checkActive"),
+                        new EntityNotExistsTransition("Active Sarcophagus", 1000, "checkInactive")
+                        ),
+                    new State("checkActive",
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Active Sarcophagus", 1000, "ItsGoTime")
+                        ),
+                    new State("checkInactive",
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Inactive Sarcophagus", 1000, "ItsGoTime")
+                        ),
+                    new State("ItsGoTime",
+                        new Transform("Tomb Defender")
+                        )
+                    )
+            )
+            .Init("Ice Tomb Support Statue",
+                new State(
+                    new State(
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Inactive Sarcophagus", 1000, "checkActive"),
+                        new EntityNotExistsTransition("Active Sarcophagus", 1000, "checkInactive")
+                        ),
+                    new State("checkActive",
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Active Sarcophagus", 1000, "ItsGoTime")
+                        ),
+                    new State("checkInactive",
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Inactive Sarcophagus", 1000, "ItsGoTime")
+                        ),
+                    new State("ItsGoTime",
+                        new Transform("Tomb Support")
+                        )
+                    )
+            )
+            .Init("Ice Tomb Attacker Statue",
+                new State(
+                    new State(
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Inactive Sarcophagus", 1000, "checkActive"),
+                        new EntityNotExistsTransition("Active Sarcophagus", 1000, "checkInactive")
+                        ),
+                    new State("checkActive",
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Active Sarcophagus", 1000, "ItsGoTime")
+                        ),
+                    new State("checkInactive",
+                        new ConditionalEffect(ConditionEffectIndex.Invulnerable),
+                        new EntityNotExistsTransition("Inactive Sarcophagus", 1000, "ItsGoTime")
+                        ),
+                    new State("ItsGoTime",
+                        new Transform("Tomb Attacker")
+                        )
+                    )
+            )
+            .Init("Ice Golem",
+                new State(
+                    new NoPlayerWithinTransition(7, "Idle"),
+                    new PlayerWithinTransition(7, "Chase"),
+                    new State("Idle",
+                        new Wander(.1)
+                    ),
+                    new State("Chase",
+                        new Follow(1.5, 7, 0),
+                        new Shoot(3, projectileIndex: 1, coolDown: 500)
+                    )
+                )
+                )
+            .Init("Ice Tomb Boss Anchor",
+                new State(
+                    new ConditionalEffect(ConditionEffectIndex.Invincible, true),
+                    new RealmPortalDrop(),
+                    new State("Idle",
+                        new EntitiesNotExistsTransition(300, "Death", "Ice Tomb Support", "Ice Tomb Attacker", "Ice Tomb Defender", "Ice Tomb Defender Statue", "Ice Tomb Support Statue", "Ice Tomb Attacker Statue")
+                    ),
+                    new State("Death",
+                        new RemoveEntity(10, "Tomb Portal of Cowardice"),
+                        new Suicide()
+                    )
+                )
+            );
+    }
+}
+  
